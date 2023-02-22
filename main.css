@@ -1,0 +1,490 @@
+
+
+/*THIS IS THE START OF THE LANDING/HEADER*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 500 1.6rem "Ubuntu";
+}
+
+.landing {
+    position: relative;
+    height: 81vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.landing__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 59%, rgba(0, 0, 0, 0.3) 100%), url(pictures/electrician-main.jpg) no-repeat fixed center/cover;
+    filter: blur(2px);
+}
+
+.landing__container {
+    position: absolute;
+    top: 38%;
+    right: 10%;
+}
+
+.landing__container__text {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font: 700 1.8rem "Ubuntu";
+    color: #000;
+}
+
+.landing__container h1 {
+    font-size: 5.5rem;
+    border-left: 5px solid #f79d2b;
+    padding-left: 5px;
+    color: #ffff00;
+}
+
+.landing__container__text--lower {
+    margin-top: 1.7rem;
+    font: italic 500 3rem "Ubuntu";
+}
+
+.landing__container__buttons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.landing__container__buttons {
+    margin-top: 2rem;
+}
+
+.button--learn {
+    margin-right: 3.5rem;
+    background-color: #f58d0b;
+}
+
+.button--services {
+    color: #000;
+    background-color: #ee0;
+}
+
+.button--learn:hover,
+.button--services:hover,
+.card__action:hover{
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.button--learn:hover {
+    background-color: #f79d2b;
+}
+
+.button--services:hover {
+    background-color: #ffff00;
+}
+
+.button--learn:active,
+.button--services:active,
+.card__action:active
+{
+    transition: transform 150ms;
+    transform: scale(1.05);
+}
+
+.direction-arrow__container,
+.direction-arrow__container:link,
+.direction-arrow__container:visited {
+    transform: translateX(-50%) rotateZ(90deg);
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    height: auto;
+    width: 5rem;
+    opacity: 0;
+    animation: landing__Animation 3500ms linear 1s infinite normal;
+}
+
+.direction-arrow {
+    width: 100%;
+    height: auto;
+}
+
+
+/*THIS IS THE END OF THE LANDING/HEADER*/
+
+
+
+
+
+/*THIS IS THE START OF THE SERVICES*/
+
+.services {
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.services h2 {
+    text-align: center;
+    font: 500 7rem "Ubuntu";
+}
+
+.services__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 90%;
+    margin: 7.5rem auto 0 auto;
+}
+
+.services__container__card {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 58rem;
+    max-width: 56rem;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(244,205,9,1) 18%, rgba(246,149,26,1) 61%);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+
+.services__container__card:not(:last-child) {
+    margin-right: 7%;
+}
+
+
+.card__icon__container {
+    display: inline-block;
+    margin-top: 5rem;
+    position: relative;
+    height: 14rem;
+    width: 14rem;
+    border-radius: 500px;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card__icon {
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.services__container__card h2 {
+    margin-top: 2rem;
+    color: #fff;
+    font: 500 3.5rem "Ubuntu";
+    text-shadow: 0 6px 8px rgba(72, 71, 70, 0.58),0 -2px 1px #fff;
+}
+
+.card__price {
+    margin-top: 2.5rem;
+    font: 400 2rem "Ubuntu";
+}
+
+.card__price span {
+    font: 400 4.5rem "Ubuntu";
+    text-shadow: 0 6px 8px rgba(72, 71, 70, 0.58),0 -2px 1px #000;
+}
+
+.card__description {
+    font: 400 2rem "Ubuntu";
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    padding: 0 2rem;
+}
+
+.card__action,
+.card__action:link,
+.card__action:visited{
+    position: absolute;
+    bottom: -2rem;
+    color: #fff;
+    margin-top: 2rem;
+    background-color: #ee0;
+}
+
+.card__action:hover {
+    background-color: #ffff00;
+}
+
+
+/*THIS IS THE END OF THE SERVICES*/
+
+
+
+/*THIS IS THE START OF CUSTOMERS*/
+
+
+
+.customers h2 {
+    text-align: center;
+    font: 500 7rem "Ubuntu";
+    margin-bottom: 7rem;
+}
+
+.customers {
+    margin: 20rem auto 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.customer-testimonial__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.customer-testimonial__container:last-child {
+    margin-top: 5rem;
+}
+
+.customer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    width: 50%;
+}
+
+.customer__photo {
+    display: inline-block;
+    margin: 0 auto;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 100rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.customer__name {
+    margin-top: 1.2rem;
+    font: 400 3.5rem "Ubuntu";
+}
+
+.customer__rating {
+    margin: 1rem 0 0 0;
+}
+
+.star {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border: 2px solid #d4af37;
+}
+
+.star-full {
+    background: #d4af37;
+}
+
+.star-half {
+    background: #d4af37;
+    background: linear-gradient(90deg, rgba(212,175,55,1) 53%, rgba(0,0,0,0) 53%);
+}
+
+.customer-testimonial {
+    font: 400 1.8rem "Ubuntu";
+    display: inline-block;
+    width: 60%;
+    margin: 1.5rem auto 0 auto;
+    text-align: left;
+}
+
+
+/*THIS IS THE END OF CUSTOMERS*/
+
+
+.distance-calculation {
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.distance-calculation h2 {
+    font: 500 7rem "Ubuntu";
+    text-align: center;
+}
+
+.distance-calculation p {
+    margin: 3rem 0;
+}
+
+.button--distance {
+    display: inline-block;
+    color: #000;
+    background-color: #f58d0b;
+}
+
+.button--distance:hover {
+    background-color: #f79d2b;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#visitus {
+    display: none;
+}
+
+/*******************************************************************************************************************/
+/*MEDIA QUERIES START*/
+/*******************************************************************************************************************/
+@media (max-width: 570px) {
+    .landing__container__text {
+        font: 700 1.2rem "Ubuntu";
+    }
+
+    .landing__container h1 {
+        font-size: 4.6rem;
+    }
+
+    .landing__container__text--lower {
+        font: italic 500 2.1rem "Ubuntu";
+    }
+
+    .button--learn:link,
+    .button--learn:visited,
+    .button--services:link,
+    .button--services:visited{
+        font: 500 1.9rem "Ubuntu";
+    }
+    
+    .services h2,
+    .customers h2,
+    .distance-calculation h2 {
+        font: 500 5rem "Ubuntu";
+    }
+}
+@media (max-width: 760px) {
+    .landing__container {
+        top: 20%;
+        right: 2%;
+    }
+    
+    .landing__background {
+        background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 59%, rgba(0, 0, 0, 0.3) 100%), url(pictures/electrician-main-small.jpg) no-repeat fixed 50%/cover !important;
+    }
+
+    .landing__container__text {
+        font: 700 1.5rem "Ubuntu";
+    }
+
+    .landing__container h1 {
+        font-size: 4.9rem;
+    }
+
+    .landing__container__text--lower {
+        font: italic 500 2.4rem "Ubuntu";
+    }
+
+    .landing__container__buttons {
+        font: 500 2.2rem "Ubuntu";
+    }
+
+    .button--learn:link,
+    .button--learn:visited,
+    .button--services:link,
+    .button--services:visited{
+        font: 500 2.2rem "Ubuntu";
+    }
+
+    
+    .services h2,
+    .customers h2,
+    .distance-calculation h2 {
+        font: 500 5rem "Ubuntu";
+    }
+}
+
+@media (max-width: 990px) {
+    .services__container {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    
+    .services__container__card:not(:last-child) {
+        margin: 0 auto 6rem auto;
+    }
+    
+    .services__container__card:last-child {
+        margin: 0 auto;
+    }
+    
+    .customer-testimonial__container {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .customer:not(:first-child) {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landing__background {
+        background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 59%, rgba(0, 0, 0, 0.3) 100%), url(pictures/electrician-main-small.jpg) no-repeat fixed 65%/cover;
+    }
+
+    .landing__container {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+    }
+    
+}
+
+
+
+
+
+/*******************************************************************************************************************/
+/*MEDIA QUERIES END*/
+/*******************************************************************************************************************/
+
+
+
+/*******************************************************************************************************************/
+/*ANIMATIONS START*/
+/*******************************************************************************************************************/
+
+@keyframes landing__Animation {
+    0% {
+        transform: translate(-50%,0) rotateZ(90deg);
+        opacity: 0;
+    }
+    
+    20% {
+        opacity: 1;
+    }
+    
+    80% {
+        opacity: 1;
+        transform: translate(-50%,4.5rem) rotateZ(90deg);
+    }
+    
+    100% {
+        transform: translate(-50%,4.5rem) rotateZ(90deg);
+        opacity: 0;
+    }
+    
+}
+
+
+/*******************************************************************************************************************/
+/*ANIMATIONS END*/
+/*******************************************************************************************************************/

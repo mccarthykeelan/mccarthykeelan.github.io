@@ -1,0 +1,164 @@
+<!--VoltZ V1.0-->
+<!--Authored By Keelan McCarthy (T00213785)-->
+<!--IT TRALEE-->
+<!--Resolution 3840x2160-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Voltz Get Quote">
+    <meta name="keywords" content="Home, Electrician, TV, Satellite, Installation, Prices">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="quote.css">
+    <link rel="icon" href="../pictures/icons/favicon.png" type="image/gif" sizes="32x32">
+</head>
+<body>
+    <div class="backdrop"></div>
+    <header>
+        <nav>
+            <div class="toggle-button">
+                <div class="preload toggle-button__bar"></div>
+                <div class="toggle-button__bar"></div>
+                <div class="toggle-button__bar"></div>
+            </div>
+            <div class="mobile-nav">
+                <ul class="mobile-nav__items">
+                    <li>
+                        <a href="../index.html" class="nav-link mobile-nav__item">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link mobile-nav__item">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link mobile-nav__item">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link mobile-nav__item">News</a>
+                    </li>
+                    <li>
+                        <a href="../contact-us/contact.html" class="nav-link mobile-nav__item">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <figure>
+                <img src="../pictures/logo.png" alt="none">
+                <figcaption></figcaption>
+            </figure>
+            <ul class="nav-links">
+                <li><a class="nav-link nav-link__current" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Services</a></li>
+                <li><a class="nav-link" href="#">News</a></li>
+                <li><a class="nav-link" href="../contact-us/contact.html">Contact</a></li>
+            </ul>
+            <a href="quote.html" class="button button--quote">get a quote</a>
+        </nav>
+    </header>
+    <main>
+        <section class="quote">
+            <div class="quote-container">
+                <div class="quote__header">
+                    <h1>Find a better quote elsewhere?<br>We'll match it, guaranteed</h1>
+                </div>
+                <forum class="quote__forum" action="">
+                    <h3>REQUEST A QUOTE</h3>
+                    <label for="quote-type">Quote Type:
+                        <select id="quote-type" name="cars" prefix>
+                          <option value="quote-type" selected>Quote Type</option>
+                          <option value="satellite">Satellite Installation</option>
+                          <option value="repair">TV Repair</option>
+                        </select>
+                    </label>
+
+                    <label for="name">Your Name: <input type="text" id="name" required></label>
+
+                    <label for="forum-email">Email: <input type="email" id="forum-email" required></label>
+
+                    <label for="number">Mobile Number: <input type="number" id="number" required></label>
+
+                    <label for="address">Street Address: <input type="text" id="address" required></label>
+                    <label for="town">Town: <input type="text" id="town"></label>
+                    <label for="county">County: <select id="county" name="county" prefix>
+                      <option value="county-select" selected>Select County</option>
+                      <option value="antrim">Antrim</option>
+                      <option value="armagh">Armagh</option>
+                      <option value="carlow">Carlow</option>
+                      <option value="cavan">Cavan</option>
+                      <option value="clare">Clare</option>
+                      <option value="cork">Cork</option>
+                      <option value="derry">Derry</option>
+                      <option value="donegal">Donegal</option>
+                      <option value="down">Down</option>
+                      <option value="dublin">Dublin</option>
+                      <option value="fermanagh">Fermanagh</option>
+                      <option value="galway">Galway</option>
+                      <option value="kerry">Kerry</option>
+                      <option value="kildare">Kildare</option>
+                      <option value="kilkenny">Kilkenny</option>
+                      <option value="laois">Laois</option>
+                      <option value="leitrum">Leitrum</option>
+                      <option value="limerick">Limerick</option>
+                      <option value="longford">Longford</option>
+                      <option value="louth">Louth</option>
+                      <option value="mayo">Mayo</option>
+                      <option value="meath">Meath</option>
+                      <option value="monaghan">Monaghan</option>
+                      <option value="offaly">Offaly</option>
+                      <option value="roscommon">Roscommon</option>
+                      <option value="sligo">Sligo</option>
+                      <option value="tipperary">Tipperary</option>
+                      <option value="tyrone">Tyrone</option>
+                      <option value="waterford">Waterford</option>
+                      <option value="westmeath">Westmeath</option>
+                      <option value="wexford">Wexford</option>
+                      <option value="wicklow">Wicklow</option>
+                    </select>
+                    </label>
+                    <label for="eircode">Eircode: <input type="text" id="eircode" required></label>
+                    <label for="comment"></label>
+                    <textarea id="comment" rows="7" cols="55">Additional Comments eg TV Problem for repairs or Residental/Business for Satellite Installation</textarea>
+                    <input type="submit" value="Submit">
+                </forum>
+            </div>
+        </section>
+    </main>
+    <footer>
+       <div class="footer-container">
+            <div class="footer__social-media-subscribe">
+                <h3>STAY CONNECTED</h3>
+                <p>Join over 10,000 people who recieve our monthly news letters</p>
+                <form action="/subscribe.php" method="post">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="site-map">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="../contact-us/contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.facebook.com/Voltz-Television-Services-103505944700845" class="social-media-icon" target="_blank"><img src="../pictures/icons/facebook.png" alt="Voltz Facebook"></a></li>
+                    <li><a href="#"  class="social-media-icon" target="_blank"><img src="../pictures/icons/twitter.png" alt="Voltz Twitter"></a></li>
+                    <li><a href="#"  class="social-media-icon" target="_blank"><img src="../pictures/icons/youtube.png" alt="Voltz Youtube"></a></li>
+                    <li><a href="#"  class="social-media-icon" target="_blank"><img src=../pictures/icons/linkedin.png alt="Voltz LinkedIn"></a></li>
+                </ul>
+            </div>
+            <div class="social-media-facebook">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVoltz-Television-Services-103505944700845&tabs=timeline&width=340&height=162&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="162" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+       </div>
+       <p>Copyright&copy; 2020 VoltZ</p>
+    </footer>
+    <script src="../shared.js"></script>
+</body>
+</html>
+
+
+<!--        <div class="fb-page" data-href="https://www.facebook.com/Voltz-Television-Services-103505944700845" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Voltz-Television-Services-103505944700845" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Voltz-Television-Services-103505944700845">Voltz Television Services</a></blockquote></div>-->

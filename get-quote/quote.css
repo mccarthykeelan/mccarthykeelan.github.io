@@ -1,0 +1,160 @@
+footer {
+    margin: 0;
+}
+
+.quote {
+    height: 95rem;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.31) 59%, rgba(0, 0, 0, 0.48) 100%), url(../pictures/electrician-quote.jpg) no-repeat fixed center/cover;
+}
+
+.quote-container {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 8%;
+    display: flex;
+}
+
+.quote-container > div:first-child {
+    margin-right: 6rem;
+}
+
+.quote__header h1 {
+    position: relative;
+    top: 15%;
+    border-left: 5px solid #f79d2b;
+    border-radius: 4px;
+    font: italic 500 5rem "Ubuntu";
+    color: white;
+}
+
+.quote__forum {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 4rem;
+    background-color: #f58d0b;
+    border-radius: 12px;
+}
+
+.quote__forum h3 {
+    font: 600 3rem "Ubuntu";
+    color: #fff;
+    text-align: center;
+    border-bottom: 3px solid #ffff00;
+    border-radius: 4px;
+}
+
+.quote__forum label {
+    font: 600 2rem "Ubuntu";
+    color: #fff;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    padding: 4px 0;
+}
+
+.quote__forum label:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.quote__forum label input {
+    font: 700 1.5rem "Ubuntu";
+    border-radius: 8px;
+    border: none;
+    padding: 4px 5px;
+}
+
+.quote__forum label input:focus {
+    outline: none;
+}
+
+.quote__forum textarea {
+    border-radius: 8px;
+    border: 2px solid #000;
+    padding: 4px;
+}
+
+.quote__forum #forum-email:invalid {
+    background-color: rgba(244, 82, 82, 0.67);
+}
+
+.quote__forum #forum-email:valid {
+    background-color: rgba(103, 237, 71, 0.69);
+}
+
+.quote__forum input[type="submit"] {
+    transition: all 1s;
+    font: 700 3rem "Ubuntu";
+    color: #fff;
+    -webkit-appearance: none;
+    margin-top: 2rem;
+    padding: 1.5rem 4rem;
+    border: none;
+    background-color: #ee0;
+    border-radius: 8px
+}
+
+.quote__forum input[type="submit"]:hover {
+    background-color: #ffff00; 
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.1);
+}
+
+.quote__forum input[type="submit"]:active {
+    transform: scale(1.05);
+}
+
+.quote__forum input[type="submit"]:focus {
+    outline: none;
+}
+
+/*******************************************************************************************************************/
+/*MEDIA QUERIES START*/
+/*******************************************************************************************************************/
+
+@media (max-width: 570px) {
+    
+}
+
+@media (max-width: 760px) {
+    .quote__header h1 {
+        font: italic 500 3.5rem "Ubuntu";
+    }
+}
+
+
+@media (max-width: 990px) {
+    footer > div {
+        margin-top: 0rem;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1400px) {
+    .quote__header h1 {
+        margin-top: 5rem;
+    }
+    
+    .quote-container {
+        position: relative;
+        transform: translateY(0);
+        top: 0;
+        right: 0;
+        flex-flow: column;
+        margin: 0 auto;
+    }
+    
+    .quote-container > div:first-child {
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+}
+/*******************************************************************************************************************/
+/*MEDIA QUERIES END*/
+/*******************************************************************************************************************/
